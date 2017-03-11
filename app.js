@@ -1,6 +1,6 @@
 function myFunction() {
-    var person = prompt("Please enter your Name:", "Name");
-    var a = +prompt("Please enter your Marks:","Marks");
+    var person = prompt("Please enter your Name:", "");
+    var a = +prompt("Please enter your Marks:","");
     if(a>=90){
     alert("Wow " + person + ", You've got Excellent Marks. :)");
 }
@@ -16,10 +16,10 @@ function myFunction() {
     else if(a>=50){
     alert("Hi " + person + ", Your Grade is C.");
 }
-    else if(a<=40){
+    else if(a<=40 && a>0){
     alert("Hi " + person + ", You're Failed... :(");
 }
-    else if(a !== null){
+    else if(person == ""){
     alert("No input is found.");
 }
 }
